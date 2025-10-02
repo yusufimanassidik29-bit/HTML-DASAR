@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML 5 form</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css"
+    >
+
+</head>
+<body>
+    <main class="container">
+    <h1>HTML 5 Form</h1>
+    <hr />
+    <form>
+        <div>
+            <label for="">Nama lengkap:</label>
+            <input type="text" name="nama" id="inputname">
+        </div>
+        <div>
+            <label for="inputAge">umur:</label>
+            <input type="number" name="umur" id="inputAge">
+        </div>
+        <div>
+            <label for="inputBio">Biodata:</label>
+            <textarea name="BIODATA" id="inputBiodata"></textarea>
+        </div>
+        <div>
+            <p>Jenis Kelamin</p>
+            <input type="radio" name="jenis_kelamin" id="inputberbatang">
+            <label for="inputberbatang">Laki-Laki</label>
+            <input type="radio" name="jenis_kelamin" id="inputtidakberbatang">
+            <label for="inputtidakberbatang">Perempuan</label>
+            <input type="radio" name="jenis_kelamin" id="inputtransgender">
+            <label for="inputtransgender">Cowok->Cewek</label>
+            <input type="radio" name="jenis_kelamin" id="inputtransgender">
+            <label for="inputtransgender">Cewek->Cowok</label>
+        </div>
+        <br>
+        <div>
+            <p>Hobi/Minat</p>
+            <input type="checkbox" name="Hobi" id="inputnontonanime">
+            <label for="inputnontonanime">عشاق الأنمي</label>
+            <input type="checkbox" name="Hobi" id="inputBokep">
+            <label for="inputBokep">تاجر المواد الإباحية</label>
+            <input type="checkbox" name="Hobi" id="inputcoli">
+            <label for="inputcoli">كولاي</label>
+        </div>
+        <div>
+            <label for="inputAsal">Asal Daerah</label>
+            <!-- shortcut select>option*4-->
+             <select name="asal-daerah" id="inputAsal">
+                <option value="JKT">Jakarta</option>
+                <option value="YOG">Yogyakarta</option>
+                <option value="PU">Purwojero</option>
+                <option value="BKS">Bekasi</option>
+             </select>
+        </div>
+        <div>
+            <label for="inputFoto">uplud Foto</label>
+            <input type="">
+        </div>
+        <div>
+            <label for="inputTanggal">Tanggal lahir</label>
+            <input type="date" name="tanggal_bulan_tahun" id="inputTanggal">
+        </div>
+        <!-- action buttons -->
+         <!-- shorcut button:[type-nya] -->
+        <div class="grid">
+            <button: type="reset">Reset</button:>
+            <button: type="submit">Expor</button:>
+        </div>
+        <div>
+            <label for="inputAge">umur:</label>
+            <input type="" name="umur" id="inputAge">
+        </div>
+    </form>
+    </main>
+</body>
+</html>

@@ -1,0 +1,102 @@
+/* ===== Reset Dasar ===== */
+body {
+  font-family: Arial, sans-serif;
+  background: url("https://wallpaperaccess.com/full/4910984.gif") no-repeat center center fixed;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  color: #111827;
+}
+
+/* ===== Header & Footer ===== */
+header, footer {
+  text-align: center;
+  background: rgba(255,255,255,0.85);
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 300px;
+}
+
+/* ===== Logo ===== */
+.logo {
+  width: 120px;
+  display: block;
+  margin: 0 auto 10px;
+}
+
+/* ===== Box Konten ===== */
+.box {
+  background: #000000;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 15px;
+  margin: 20px auto;
+  max-width: 750px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.15);
+}
+
+/* ===== Judul Section ===== */
+.section-title {
+  padding-left: 10px;
+  border-left: 4px solid #731a85;
+}
+
+/* ===== Foto ===== */
+.avatar {
+  width: 220px;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid #731a85;
+  display: block;
+  margin: 10px auto;
+}
+
+/* ===== Link ===== */
+a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a:hover {
+  color: #1d4ed8;
+  text-decoration: underline;
+}
+
+/* ===== Text Center ===== */
+.center {
+  text-align: center;
+}
+h1 {
+  color: rgb(4, 99, 78);
+}
+
+h3 {
+  color: rgb(7, 70, 49);
+}
+
+h4 {
+  color: whitesmoke;
+}
+
+ul {
+  color: whitesmoke;
+}
+
+ol {
+  color: whitesmoke;
+}
+
+p {
+  color: whitesmoke;
+}
+
+p1 {
+  color: #000000;
+}
+
+i {
+  color: #1d4ed8;
+}

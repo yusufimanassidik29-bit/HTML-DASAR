@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biodata Santri</title>
+    <link rel="stylesheet" href="set.css">
+</head>
+<body>
+    <div>
+    <h1>Table Basic</h1><hr>
+    <table border="4" id="Table-Basic" style="width: 100%;">
+        <!-- <tr> membuat baris baru -->
+        <!-- <td> buat kolom data baru -->
+        <!-- sorkat td*4 misalnya -->
+        <tr class="bg-header">
+            <td>No</td>
+            <td>JUDUL ANIME</td>
+            <td>GENRE</td>
+            <td>Ratting</td>
+        </tr>
+        <tr>
+            <td>1.</td>
+            <td>One Piece</td>
+            <td>action, adventure, fantasy</td>
+            <td>9,0</td>
+        </tr>
+        <tr>
+            <td>2.</td>
+            <td>Spy X Family</td>
+            <td>Action, Spy Comedy</td>
+            <td>8,3</td>
+        </tr>
+        <tr>
+            <td>3.</td>
+            <td>Mushoku Tensei</td>
+            <td>isekai,fantasy,adventure,drama,romance,harem</td>
+            <td>8,2</td>
+        </tr>
+        </table>
+        </div>
+        <h1>Table Lauk Pondok</h1><hr>
+            <!-- shortcut: table>thead+tbody+tfoot -->
+            <table border="4" id="Table-Basic" style="width: 100%;">
+                <thead>
+                    <tr>
+                        <th>No</th>
+                        <th>tanggal-bulan-tahun</th>
+                        <th> Lauk Sarapan</th>
+                        <th> Lauk Makan Siang</th>
+                        <th> Lauk Makan Sore</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                      <td>1.</td>
+                      <td>24-09-2025</td>
+                      <td>Sayur Sawi+kerupuk</td>
+                      <td rowspan="2">Sop Telur</td>
+                      <td>Bakso+Buncis</td>
+                    </tr>
+                    <tr>
+                      <td>2.</td>
+                      <td>25-09-2025</td>
+                      <td>Sayur Kangkung+kerupuk</td>
+                      <!-- <td>Sop Telur</td> -->
+                      <td>Mie goreng</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                          <td colspan="4">Yang Paling Enak</td>
+                         <td>Mie Goreng</td>
+                    </tr>
+                    
+                </tfoot>
+            </table>
+        <style>
+            #Table-Basic {
+                width: 60%;
+                border-collapse: collapse;
+            }
+            #Table-Basic td {
+                padding: 6px;
+                font-family: Arial;
+            }
+            #Table-Basic ,bg-header {
+                background-color: black;
+                color: white;
+                font-weight: bold;
+                text-align: center;
+            }
+        </style>
+    </body>
+</html>
