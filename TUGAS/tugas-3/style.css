@@ -1,230 +1,267 @@
+/* ==================================== */
+/* 1. GLOBAL STYLES & RESET             */
+/* ==================================== */
 
-/* Reset */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
-/* Body */
 body {
-  font-family: "Segoe UI", Arial, sans-serif;
   background: #f5f6fa;
   color: #333;
   line-height: 1.6;
 }
-/* Footer */
-footer,
-.footer {
-  background: #1a3ba3;
-  color: #fff;
-  padding: 15px;
-  text-align: center;
-}
-img {
-  width: 120px;
-  height: 120px;
-  object-fit: cover;
-  border-radius: 50%; /* Biar lingkaran */
-  border: 2px solid #ddd;
-}
-/* Untuk gambar "Minat Saya" */
-.minat img {
-  width: 100px;
-  height: 100px;
-  object-fit: cover;
-  border-radius: 50%;
+
+/* Container */
+.container {
+  max-width: 850px;
+  margin: 20px auto;
+  padding: 0 20px;
 }
 
+/* ==================================== */
+/* 2. CARD & SECTION STYLE              */
+/* ==================================== */
 
-/* Header */
+.card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 22px 25px;
+  margin-bottom: 25px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+  transition: 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 14px rgba(0, 0, 0, 0.2);
+}
+
+/* Judul tiap section */
+.section-title {
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-bottom: 12px;
+  border-left: 4px solid #f1c40f;
+  padding-left: 10px;
+  color: #1a3d8f;
+}
+
+/* ==================================== */
+/* 3. HEADER & NAVIGATION BAR           */
+/* ==================================== */
+
 .site-header {
   text-align: center;
-  padding: 20px;
+  padding: 40px 15px 20px;
 }
 
 .site-header .logo {
   width: 80px;
+  height: 80px;
+  object-fit: contain;
   margin-bottom: 10px;
 }
 
-.site-header h1 {
-  font-size: 1.8em;
-  color: #1a3ba3;
+h1 {
+  font-size: 26px;
+  color: #1a3d8f;
   margin-bottom: 5px;
 }
 
-.site-header .subtitle {
-  font-size: 0.9em;
-  color: #666;
-  margin-bottom: 20px;
+.site-header p {
+  color: #777;
+  font-size: 0.95rem;
 }
 
-/* Navbar */
-.nav-menu {
-  list-style: none;
+/* Navigasi */
+.navbar {
   display: flex;
   justify-content: center;
-  gap: 10px;
-  margin-bottom: 20px;
-  flex-wrap: wrap;
+  gap: 12px;
+  margin: 25px 0 35px;
 }
 
-.nav-menu li {
-  display: inline-block;
-}
-
-.nav-menu a {
-  display: inline-block;
-  padding: 8px 16px;
+.navbar a {
   text-decoration: none;
-  color: #1a3ba3;
-  font-weight: 500;
-  border-radius: 20px;
-  transition: 0.3s;
+  padding: 8px 18px;
+  border-radius: 30px;
   background: #fff;
   border: 1px solid #ddd;
+  color: #333;
+  font-size: 14px;
+  transition: 0.3s ease;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
 }
 
-.nav-menu a:hover {
-  background: #e9efff;
-}
-
-.nav-menu a.active {
-  background: #1a3ba3;
+.navbar a:hover,
+.navbar .active {
+  background: #1a3d8f;
   color: #fff;
-  border-color: #1a3ba3;
+  border-color: #1a3d8f;
+  box-shadow: 0 4px 8px rgba(26, 61, 143, 0.3);
 }
 
-/* Card */
-.card {
-  max-width: 800px;
-  margin: 20px auto;
-  background: #fff;
-  border-radius: 10px;
-  padding: 20px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-}
-
-.card h2 {
-  font-size: 1.2em;
-  margin-bottom: 10px;
-  color: #1a3ba3;
-  border-left: 4px solid #ffcc00;
-  padding-left: 8px;
-}
+/* ==================================== */
+/* 4. KONTEN BERANDA                    */
+/* ==================================== */
 
 .card p {
-  font-size: 1em;
-  color: #444;
+  color: #333;
+  text-align: justify;
+  font-size: 0.95rem;
 }
 
-/* Section Minat */
 .minat {
   display: flex;
   align-items: center;
-  gap: 20px;
+  gap: 18px;
   margin-top: 10px;
-  flex-wrap: wrap;
 }
 
 .minat img {
   width: 120px;
   height: 120px;
+  border-radius: 50%;
   object-fit: cover;
-  border-radius: 50%; /* Biar lingkaran */
-  border: 2px solid #ddd;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25);
 }
 
-/* Galeri */
+/* ==================================== */
+/* 5. GARIS PEMBATAS HR                 */
+/* ==================================== */
+
+hr {
+  width: 850px;
+  max-width: 90%;
+  margin: 15px auto;
+  border: none;
+  border-top: 1px solid #ddd;
+}
+
+/* ==================================== */
+/* 6. JADWAL TABLE                      */
+/* ==================================== */
+
+h2.judul {
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-bottom: 12px;
+  border-left: 4px solid #f1c40f;
+  padding-left: 10px;
+  color: #1a3d8f;
+}
+
+.jadwal {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.jadwal th,
+.jadwal td {
+  padding: 12px 15px;
+  text-align: center;
+  border: 1px solid #eee;
+  font-size: 14px;
+}
+
+.jadwal thead {
+  background-color: #1a3d8f;
+  color: #fff;
+}
+
+.jadwal tbody tr:nth-child(even) {
+  background-color: #fafbff;
+}
+
+.jadwal tbody tr:hover {
+  background-color: #eef3ff;
+}
+
+/* ==================================== */
+/* 7. GALERI                            */
+/* ==================================== */
+
 .gallery {
+  text-align: center;
+}
+
+.gallery-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 15px;
-  margin: 20px;
+  gap: 18px;
+  margin-top: 20px;
 }
 
-.gallery img {
-  width: 100%;
-  border-radius: 10px;
-  object-fit: cover;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-  transition: 0.3s;
-}
-
-.gallery img:hover {
-  transform: scale(1.05);
-}
-
-/* Form Kontak */
-.contact-form {
-  max-width: 600px;
-  margin: 20px auto;
+.gallery-item {
   background: #fff;
-  padding: 20px;
   border-radius: 10px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
 }
 
-.contact-form label {
-  display: block;
-  margin-bottom: 5px;
-  color: #333;
-  font-weight: 500;
+.gallery-item:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
 }
 
-.contact-form input,
-.contact-form textarea {
+.gallery-item img {
   width: 100%;
-  padding: 10px;
-  margin-bottom: 15px;
-  border: 1px solid #ccc;
-  border-radius: 6px;
-  font-size: 1em;
-}
-
-.contact-form button {
-  background: #1a3ba3;
-  color: #fff;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 6px;
-  cursor: pointer;
-  font-size: 1em;
-  transition: 0.3s;
-}
-
-.contact-form button:hover {
-  background: #0f2677;
-}
-
-/* Footer */
-.site-footer {
-  text-align: center;
-  padding: 15px;
-  margin-top: 40px;
-  background: #1a3ba3;
-  color: #fff;
-  font-size: 0.9em;
-}
-
-/* Responsive */
-@media (max-width: 600px) {
-  .minat {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .site-header h1 {
-    font-size: 1.4em;
-  }
-}
-.main img {
-  width: 220px;
   height: 220px;
   object-fit: cover;
-  border-radius: 50%;
-  border: 3px solid #731a85;
   display: block;
-  margin: 10px auto;
+}
+
+.gallery-item-caption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(101, 104, 109, 0.9);
+  color: #f1c40f;
+  font-weight: 600;
+  font-size: 0.9rem;
+  padding: 10px 6px;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+  letter-spacing: 0.3px;
+}
+
+/* ==================================== */
+/* 8. FEEDBACK & FOOTER                 */
+/* ==================================== */
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.btn-submit {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #f1c40f;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 15px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3);
+  transition: background 0.3s;
+}
+
+.btn-submit:hover {
+  background-color: #d4ac0d;
+}
+
+.site-footer {
+  text-align: center;
+  padding: 15px 0;
+  margin-top: 20px;
+  border-top: 1px solid #eee;
+  color: #050505;
+  font-size: 0.9rem;
+  background-color: #4478f0;
 }

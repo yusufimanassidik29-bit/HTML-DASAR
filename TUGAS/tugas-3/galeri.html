@@ -1,49 +1,79 @@
-```html
 <!DOCTYPE html>
 <html lang="id">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Galeri - Website Santri</title>
+  <title>Galeri Karya Santri</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <!-- Header -->
   <header class="site-header">
-    <h1>MY-Galeri </h1>
-    <p class="subtitle">Kumpulan dokumentasi kegiatan</p>
-
-    <nav>
-      <ul class="nav-menu">
-        <li><a href="index.html" >Beranda</a></li>
-        <li><a href="biodata.html">Biodata</a></li>
-        <li><a href="jadwal.html">Jadwal</a></li>
-        <li><a href="galeri.html"class="active">Galeri</a></li>
-        <li><a href="feedback.html">Feedback</a></li>
-      </ul>
+    <h1>Galeri Karya Santri</h1>
+    <p>Karya Pertama: Website Profil Pribadi</p>
+    <nav class="navbar">
+      <a href="index.html">Beranda</a>
+      <a href="biodata.html">Biodata</a>
+      <a href="jadwal.html">Jadwal</a>
+      <a href="galeri.html" class="active">Galeri</a>
+      <a href="feedback.html">Feedback</a>
     </nav>
+    <hr>
   </header>
 
-  <!-- Isi Galeri -->
-  <section class="card">
-    <h2>Dokumentasi Kegiatan</h2>
-    <div class="gallery">
-      <!-- Gambar lokal -->
-      <img src="img/kegiatan1.jpg" alt="Kegiatan 1">
-      <img src="img/kegiatan2.jpg" alt="Kegiatan 2">
-      <img src="img/kegiatan3.jpg" alt="Kegiatan 3">
+  <!-- Konten Galeri -->
+  <main class="container">
+    <section class="card gallery">
+      <h2 class="section-title">🎨 Karya Desain</h2>
+      
+      <div class="gallery-grid">
+        <div class="gallery-item">
+          <img src="image/tele.jpg"alt="Halaqah Ku">
+          <p class="gallery-item-caption">Foto Ku Bersama Halaqah Ku.</p>
+        </div>
+        <div class="gallery-item">
+          <img src="image/Screenshot 2025-10-07 164416.png" alt="Codingan Ku">
+          <p class="gallery-item-caption">coding tugas HTML.</p>
+        </div>
 
-      <!-- Gambar dari internet -->
-      <img src="https://source.unsplash.com/400x300/?mosque" alt="Masjid">
-      <img src="https://source.unsplash.com/400x300/?islamic" alt="Islamic">
-      <img src="https://source.unsplash.com/400x300/?students" alt="Santri Belajar">
+        <div class="gallery-item">
+          <img src="image/download.jpg" alt="Hewan Kesukaan Ku">
+          <p class="gallery-item-caption"> Hewan Yang Paling Kusuka.</p>
+        </div>
+        
+        <div class="gallery-item">
+          <img src="image/pemandangan.jpg" alt="Pemandangan">
+          <p class="gallery-item-caption">Pemandangan Yang Paling Ku Suka.</p>
+        </div>
+
+        <div class="gallery-item">
+          <img src="image/makkah.jpg" alt="makkah al-mukarramah">
+          <p class="gallery-item-caption">tempat yang ingin ku kunjungi.</p>
+        </div>
+
+        <div class="gallery-item">
+          <img src="image/karuizawa.jpg" alt="foto anime">
+          <p class="gallery-item-caption">waifu-ku.</p>
+        </div>
+      </div>
+    </section>
+      
+     <section class="card gallery-card">
+    <h2 class="section-title">🎬 Karya Video</h2>
+    <div class="video-container">
+      <iframe width="560" height="315"
+        src="https://www.youtube.com/embed/2tD35jvMlO8?si=nxwhHs7ZHuq_kBdW"
+        title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+      </iframe>
     </div>
-  </section>
+    </select> 
+  </main>
 
   <!-- Footer -->
   <footer class="site-footer">
-    <p>&copy; 2025 Website Santri. All rights reserved.</p>
+    &copy; 2025 | HSI Boarding School Purworejo — Kelas X B
   </footer>
 </body>
 </html>
-```

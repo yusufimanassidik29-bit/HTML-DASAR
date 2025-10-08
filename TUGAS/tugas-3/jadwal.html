@@ -1,79 +1,95 @@
-```html
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Jadwal - Website Santri</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jadwal Kegiatan Belajar</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- Header -->
-  <header class="site-header">
-    <img src="img/logo.png" alt="Logo Santri" class="logo">
-    <h1>Jadwal Harian</h1>
-    <p class="subtitle">Kegiatan santri sehari-hari</p>
 
-    <nav>
-      <ul class="nav-menu">
-        <li><a href="index.html" >Beranda</a></li>
-        <li><a href="biodata.html">Biodata</a></li>
-        <li><a href="jadwal.html"class="active">Jadwal</a></li>
-        <li><a href="galeri.html">Galeri</a></li>
-        <li><a href="feedback.html">Feedback</a></li>
-      </ul>
-    </nav>
-    </nav>
-  </header>
+    <header class="site-header">
+        <h1>Jadwal Harian Santri</h1>
+        <p>Pekan ini: Materi HTML & CSS</p>
+    </header>
+    <hr>
+    <nav class="navbar">
+        <a href="index.html">Beranda</a>
+        <a href="biodata.html">Biodata</a>
+        <a href="jadwal.html" class="active">Jadwal</a> 
+        <a href="galeri.html">Galeri</a>
+        <a href="feedback.html">Feedback</a>
+    </nav><hr>
 
-  <!-- Isi Jadwal -->
-  <section class="card">
-    <h2>Jadwal Harian Santri</h2>
-    <table border="1" cellspacing="0" cellpadding="8" width="100%">
-      <thead>
-        <tr style="background:#e9efff;">
-          <th rowspan="2">Waktu</th>
-          <th colspan="2">Kegiatan</th>
-        </tr>
-        <tr style="background:#e9efff;">
-          <th>Utama</th>
-          <th>Pendukung</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>04:00 - 05:00</td>
-          <td>Sholat Subuh & Dzikir</td>
-          <td>Murojaah Qur’an</td>
-        </tr>
-        <tr>
-          <td>07:00 - 12:00</td>
-          <td>Sekolah / Madrasah</td>
-          <td>Diskusi Ilmiah</td>
-        </tr>
-        <tr>
-          <td>12:30 - 13:30</td>
-          <td>Sholat Dzuhur</td>
-          <td>Istirahat</td>
-        </tr>
-        <tr>
-          <td>15:30 - 17:00</td>
-          <td>Sholat Ashar & Kajian</td>
-          <td>Olahraga / Ekstrakurikuler</td>
-        </tr>
-        <tr>
-          <td>19:00 - 21:00</td>
-          <td>Sholat Isya & Mengaji</td>
-          <td>Membaca / Menulis</td>
-        </tr>
-      </tbody>
-    </table>
-  </section>
-
-  <!-- Footer -->
-  <footer class="site-footer">
-    <p>&copy; 2025 Website Santri. All rights reserved.</p>
+    <main class="container">
+        <section class="card">
+            
+            <h2 class="section-title blue">📅 Jadwal Kegiatan Belajar</h2>
+            
+            <table class="jadwal">
+                <thead>
+                    <tr>
+                        <th colspan="2">Waktu</th>
+                        <th>Hari</th>
+                        <th>Kegiatan IT</th>
+                    </tr>
+                    <tr>
+                        <th class="sub-header">Mulai</th>
+                        <th class="sub-header">Selesai</th>
+                        <th></th>
+                        <th></th> 
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>20:00</td>
+                        <td>21:30</td>
+                        <td>Senin</td>
+                        <td>Pelajaran IT (Teori HTML, Phyton, DLL)</td>
+                    </tr>
+                    <tr>
+                        <td>20:00</td>
+                        <td>21:30</td>
+                        <td>Selasa</td>
+                        <td>Pelajaran IT (Teori HTML, Phyton, DLL)</td>
+                    </tr>
+                    <tr>
+                        <td>20:00</td>
+                        <td>21:30</td>
+                        <td>Rabu</td>
+                        <td>Pelajaran IT (Teori HTML, Phyton, DLL)</td>
+                    </tr>
+                    <tr>
+                        <td>20:00</td>
+                        <td>21:30</td>
+                        <td>Kamis</td>
+                        <td>Pelajaran IT (Teori HTML, Phyton, DLL)</td>
+                    </tr>
+                    <tr>
+                        <td>20:00</td>
+                        <td>21:30</td>
+                        <td>Jum'at</td>
+                        <td>Pelajaran IT (Teori HTML, Phyton, DLL)</td>
+                    </tr>
+                    <tr>
+                        <td>20:00</td>
+                        <td>21:30</td>
+                        <td>Sabtu</td>
+                        <td>Pelajaran IT (Teori HTML, Phyton, DLL)</td>
+                    </tr>
+                    <tr>
+                        <td>19:30</td> 
+                        <td>21:30</td>
+                        <td>Ahad</td>
+                        <td>PENELPONAN</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+    
+    <footer class="site-footer">
+    &copy; 2025 | HSI Boarding School Purworejo — Kelas X B
   </footer>
 </body>
 </html>
-```

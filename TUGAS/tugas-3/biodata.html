@@ -3,71 +3,81 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Biodata - Website Santri</title>
+  <title>Biodata Santri</title>
   <link rel="stylesheet" href="style.css">
-  <style>
-    /* Supaya foto bulat */
-    .profile-img {
-      width: 150px;
-      height: 150px;
-      object-fit: cover;   /* biar nggak ketarik */
-      border-radius: 50%;  /* bikin lingkaran */
-      border: 2px solid #ddd; /* bingkai tipis */
-      margin-top: 10px;
-    }
-  </style>
 </head>
 <body>
-  <!-- Header -->
   <header class="site-header">
-    <h1>Biodata Santri</h1>
-    <p class="subtitle">Profil lengkap dan informasi pribadi</p>
+    <div class="header-inner">
+      <div class="brand">
+        <div class="brand-text">
+          <h1>Biodata Santri</h1>
+          <p class="subtitle">Kelas 10 B — Asrama Ibnu Qayyim</p>
+        </div>
+      </div>
 
-    <nav>
-      <ul class="nav-menu">
-        <li><a href="index.html">Beranda</a></li>
-        <li><a href="biodata.html" class="active">Biodata</a></li>
-        <li><a href="jadwal.html">Jadwal</a></li>
-        <li><a href="galeri.html">Galeri</a></li>
-        <li><a href="feedback.html">Feedback</a></li>
-      </ul>
-    </nav>
+      <button id="btnToggle" class="hamburger" aria-label="Buka menu">
+        <span></span><span></span><span></span>
+      </button>
+        <hr>
+      <nav class="navbar" id="navbar">
+        <a href="index.html" class="nav-item">Beranda</a>
+        <a href="biodata.html" class="nav-item active">Biodata</a>
+        <a href="jadwal.html" class="nav-item">Jadwal</a>
+        <a href="galeri.html" class="nav-item">Galeri</a>
+        <a href="feedback.html" class="nav-item">Feedback</a>
+      </nav><hr>
+    </div>
   </header>
 
-  <!-- Isi Biodata -->
-  <section class="card">
-    <h2>Data Pribadi</h2>
-    <p><b>Nama:</b> Ahmad Yusuf</p>
-    <p><b>Kelas:</b> XI IPA 1</p>
-    <p><b>Alamat:</b> Purworejo, Jawa Tengah</p>
-    <br>
-    <img src="image/ftpp.jpg" alt="Foto Diri" class="profile-img">
+  <main class="container">
+    <!-- Biodata Singkat -->
+    <section class="card">
+      <h3 class="section-title orange">Biodata Singkat</h3>
+      <div class="minat">
+        <img src="image/ftpp.jpg" alt="Foto Santri" class="profile-photo">
+        <p>
+          Assalamu’alaikum! Saya adalah siswa HSI Boarding School Purworejo. <br>
+          Saya menyukai belajar teknologi dan ingin menjadi pribadi yang selalu menebar manfaat. <br>
+          Saat ini saya sedang belajar materi HTML & CSS dasar untuk membuat website sederhana.
+        </p>
+      </div>
+    </section>
 
-    <hr>
+    <!-- Hobi -->
+    <section class="card">
+      <h3 class="section-title blue">Hobi</h3>
+      <ul>
+        <li>Ngoding</li>
+        <li>Membaca</li>
+        <li>Nonton Anime</li>
+      </ul>
+    </section>
 
-    <h2>Tentang Saya</h2>
-    <p>Saya adalah seorang santri yang bersemangat dalam belajar ilmu agama dan ilmu umum. Saya bercita-cita menjadi seorang guru sekaligus penulis buku Islami.</p>
+    <!-- Cita-cita -->
+    <section class="card">
+      <h3 class="section-title orange">Cita-cita</h3>
+      <ol>
+        <li>Programmer</li>
+        <li>Pro Gamer</li>
+        <li>Ethical Hacker</li>
+        <li>DLL yang bermanfaat</li>
+      </ol>
+    </section>
 
-    <hr>
+    <!-- Kontak -->
+    <section class="card">
+      <h3 class="section-title blue">Kontak</h3>
+      <p>Whatsapp: <a href="https://wa.me/6285864248610" target="_blank">Chat via WhatsApp</a></p>
+      <p>Telegram: <a href="https://t.me/@iman072010" target="_blank">Chat via Telegram</a></p>
+      <p>Email: <a href="email:yusufimanassidik29@gmail.com">yusufimanassidik29@gmail.com</a></p>
+    </section>
+  </main>
 
-    <h2>Hobi</h2>
-    <ul>
-      <li>Menghafal Al-Qur’an</li>
-      <li>Membaca buku sejarah</li>
-      <li>Olahraga futsal</li>
-    </ul>
 
-    <h2>Cita-Cita</h2>
-    <ol>
-      <li>Menjadi Hafidz Qur’an</li>
-      <li>Melanjutkan kuliah di Timur Tengah</li>
-      <li>Membuka pesantren modern</li>
-    </ol>
-  </section>
-
-  <!-- Footer -->
   <footer class="site-footer">
-    <p>&copy; 2025 Website Santri. All rights reserved.</p>
+    &copy; 2025 | HSI Boarding School Purworejo — Kelas X B
   </footer>
+
 </body>
 </html>
