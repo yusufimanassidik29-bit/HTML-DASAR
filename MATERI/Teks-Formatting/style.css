@@ -1,0 +1,24 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+}
+
+.container .teks-center {
+    text-align: center;
+}
+.teks-left {
+    text-align: left;
+}
+.teks-right {
+    text-align: right;
+}
+.teks-rata {
+    text-align: justify;
+}
+h2 {
+    color: black;
+    background-color: aqua;
+    scrollbar-shadow-color: grey;
+}

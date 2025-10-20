@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ulasan Anime: Jujutsu Kaisen</title>
+    <link rel="stylesheet" href="style.css"> 
+</head>
+<body id="body">
+
+    <button id="theme-toggle">Tema Gelap</button>
+
+    <header>
+        <h1>Jujutsu Kaisen</h1> 
+        <p>Aksi, Kutukan, dan Pertempuran Penyihir Modern</p>
+    </header>
+
+    <div class="container">
+        
+        <div class="sidebar">
+            <div class="info-card">
+                <img src="abc.png" alt="Cover Anime Jujutsu Kaisen" class="cover-image">
+                <div class="detail-grid">
+                    <div class="detail-item">
+                        <strong>Nama Jepang</strong>
+                        <span>呪術廻戦 (Jujutsu Kaisen)</span>
+                    </div>
+                    <div class="detail-item">
+                        <strong>Genre Utama</strong>
+                        <span>Aksi, Fantasi Gelap, Sekolah, Supernatural</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="info-card">
+                <h2>Detail Kreatif</h2>
+                <div class="detail-grid">
+                    <div class="detail-item">
+                        <strong>Penulis (Manga)</strong>
+                        <span>Gege Akutami</span>
+                    </div>
+                    <div class="detail-item">
+                        <strong>Studio Animasi</strong>
+                        <span>MAPPA</span>
+                    </div>
+                    <div class="detail-item">
+                        <strong>Tahun Tayang Perdana</strong>
+                        <span>2020</span>
+                    </div>
+                    <div class="detail-item">
+                        <strong>Status</strong>
+                        <span>Berlanjut (Ongoing)</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="main-content">
+            <section class="info-card">
+                <h2>Sinopsis (Inti Cerita)</h2>
+                <div class="sinopsis">
+                    <p>Tokoh utama, **Yuji Itadori**, adalah siswa SMA dengan kekuatan fisik yang luar biasa, namun ia lebih memilih bergabung dengan Klub Penelitian Ilmu Gaib. Hidupnya berubah drastis setelah ia menemukan dan menelan sebuah benda terkutuk berbahaya: salah satu jari dari **Ryomen Sukuna**, Raja Kutukan legendaris. Karena hal ini, Yuji menjadi wadah bagi Sukuna dan harus dieksekusi.</p>
+                    <p>Namun, ia diselamatkan sementara oleh penyihir Jujutsu terkuat, **Satoru Gojo**, yang memberinya kesempatan. Yuji direkrut ke SMA Jujutsu Metropolitan Tokyo dan menjalani pelatihan sebagai penyihir. Misi utamanya adalah menemukan dan menelan semua sisa jari Sukuna untuk mengakhiri ancaman kutukan secara permanen. Ia ditemani oleh teman sekelasnya, **Megumi Fushiguro** dan **Nobara Kugisaki**, dalam pertempuran brutal melawan roh-roh terkutuk.</p>
+                </div>
+            </section>
+            
+            <section class="info-card">
+                <h2>Keunggulan & Daya Tarik</h2>
+                <p>Jujutsu Kaisen sangat disukai karena beberapa alasan utama. Pertama, **animasi pertarungan yang luar biasa** (dikenal sebagai "sakuga") yang dibuat oleh Studio MAPPA. Setiap adegan pertarungan terasa dinamis, brutal, dan sangat memuaskan secara visual.</p>
+                <p>Kedua, **sistem kekuatan** yang unik dan mendalam, di mana energi kutukan berasal dari emosi negatif manusia. Ketiga, karakter-karakter yang kompleks dan karismatik, terutama **Satoru Gojo** yang cepat menjadi favorit penggemar global. Anime ini berhasil menyajikan fantasi gelap dengan kedalaman emosi dan aksi non-stop.</p>
+            </section>
+        </div>
+
+    </div>
+
+    <script>
+        const themeToggle = document.getElementById('theme-toggle');
+        const body = document.getElementById('body');
+
+        // Fungsi untuk mengganti tema
+        themeToggle.addEventListener('click', () => {
+            body.classList.toggle('dark-mode');
+
+            // Simpan preferensi pengguna di Local Storage
+            if (body.classList.contains('dark-mode')) {
+                localStorage.setItem('theme', 'dark');
+                themeToggle.textContent = 'Tema Terang';
+            } else {
+                localStorage.setItem('theme', 'light');
+                themeToggle.textContent = 'Tema Gelap';
+            }
+        });
+
+        // Cek preferensi tema saat halaman dimuat
+        document.addEventListener('DOMContentLoaded', () => {
+            const savedTheme = localStorage.getItem('theme');
+            if (savedTheme === 'dark') {
+                body.classList.add('dark-mode');
+                themeToggle.textContent = 'Tema Terang';
+            } else {
+                themeToggle.textContent = 'Tema Gelap'; 
+            }
+        });
+    </script>
+
+</body>
+</html>

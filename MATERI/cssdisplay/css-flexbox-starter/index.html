@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS3: Display & Flexbox</title>
+    <!-- pico css -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css"
+    />
+    <!-- style css -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- beri space di kiri-kanan halaman -->
+    <div class="container">
+      <h1>CSS3: Display & Flexbox</h1>
+      <hr />
+      <h2>Bagian 1: Display</h2>
+      <!-- grid area -->
+      <div class="grid">
+        <!-- card box a -->
+         <!-- inline-block -->
+        <div class="card">
+          <code>display: blok;</code>
+          <div class="area" id="box-xxxx">
+            <h3>Box A</h3>
+            <p>(Konten X)</p>
+          </div>
+          <div class="area" id="box-xxxx">
+            <h3>Box X</h3>
+            <p>(Konten X)</p>
+          </div>
+        </div>
+        <!-- inline-blok -->
+        <div class="card">
+          <code>display: inline-blok;</code>
+          <div class="area area-ib">
+            <h3>Box C</h3>
+            <p>(Konten X)</p>
+          </div>
+          <div class="area area-ib">
+            <h3>Box D</h3>
+            <p>(Konten X)</p>
+          </div>
+        </div>
+        <!-- block -->
+        <div class="card">
+          <code>display: inline;</code>
+          <div class="area area-in">
+            <p>p</p>
+            <p>a</p>
+            <p>s</p>
+            <p>u</p>
+          </div>
+       
+        <!-- end card box fixed -->
+      </div>
+       <div class="card">
+          <code>display: none;</code>
+          <div class="area area-none">
+            <h3>hilang</h3>
+            <p>ini adalah kalimat yang menghilang</p>
+          </div>
+        </div>
+    </div>
+    <div class="grid">
+      </div>
+
+      <br>
+      <hr>
+      <br>
+
+      <h2>Bagian 2: felxbox (Basic)</h2>
+      <div class="flexbox-ione">
+        <div class="card">
+          ANIME
+        </div>
+        <div class="card">
+          GAMING
+        </div>
+        <div class="card">
+          SPORT
+        </div>
+      </div>
+  </body>
+</html>
+

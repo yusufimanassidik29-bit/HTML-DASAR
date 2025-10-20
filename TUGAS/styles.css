@@ -1,0 +1,195 @@
+/* ---------------------------------------------------- */
+/* 1. FONT CUSTOM (Menggunakan file yang diunggah) */
+/* ---------------------------------------------------- */
+@font-face {
+    font-family: 'BismillahScript';
+    src: url('tugas-4/fonts/bismillah_script/Bismillah\ Script.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* --- Variabel CSS untuk Tema --- */
+:root {
+    --bg-color: #f4f4f9;        /* Default: Light Mode */
+    --text-color: #333;
+    --header-bg: #2196F3; /* Biru Energi */
+    --accent-color: #E53935; /* Merah Kutukan */
+    --card-bg: #ffffff;
+    --shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* Dark Mode */
+.dark-mode {
+    --bg-color: #1a1a1a;
+    --text-color: #e0e0e0;
+    --header-bg: #424242;
+    --accent-color: #FFC107; /* Kuning Terkutuk */
+    --card-bg: #212121;
+    --shadow: 0 6px 15px rgba(0, 0, 0, 0.6);
+}
+
+/* ---------------------------------------------------- */
+/* 2. GAYA DASAR & LAYOUT */
+/* ---------------------------------------------------- */
+body {
+    font-family: 'Poppins', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    transition: background-color 0.5s, color 0.5s;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+/* ---------------------------------------------------- */
+/* 3. HEADER & ANIMASI JUDUL */
+/* ---------------------------------------------------- */
+header {
+    background-color: var(--header-bg);
+    color: white;
+    padding: 50px 0;
+    text-align: center;
+    box-shadow: var(--shadow);
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+h1 {
+    /* Menggunakan Font Custom 'Bismillah Script' */
+    font-family: 'BismillahScript', cursive; 
+    font-size: 5em; 
+    letter-spacing: 2px;
+    margin: 0;
+    text-transform: capitalize; /* Hanya kapital di awal */
+    /* Animasi Getar Kutukan */
+    animation: cursed-pulse 2s infinite alternate;
+}
+
+header p {
+    margin-top: -10px;
+    font-size: 1.2em;
+}
+
+@keyframes cursed-pulse {
+    0% { transform: translateY(0px); text-shadow: 0 0 8px var(--accent-color); }
+    100% { transform: translateY(-3px); text-shadow: 0 0 15px var(--accent-color); }
+}
+
+/* ---------------------------------------------------- */
+/* 4. KONTROL TEMA */
+/* ---------------------------------------------------- */
+#theme-toggle {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    padding: 10px 15px;
+    background-color: var(--accent-color);
+    color: white;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.3s;
+    z-index: 1000;
+}
+#theme-toggle:hover {
+    transform: scale(1.05);
+    opacity: 0.9;
+}
+
+/* ---------------------------------------------------- */
+/* 5. KARTU & GRID DETAIL */
+/* ---------------------------------------------------- */
+.main-content {
+    flex: 2; 
+    min-width: 550px;
+}
+
+.sidebar {
+    flex: 1; 
+    min-width: 300px;
+}
+
+.info-card {
+    background-color: var(--card-bg);
+    padding: 25px;
+    margin-bottom: 20px;
+    border-radius: 12px;
+    box-shadow: var(--shadow);
+    border-top: 5px solid var(--accent-color);
+    height: fit-content;
+}
+
+.info-card h2 {
+    color: var(--accent-color);
+    border-bottom: 2px solid var(--accent-color);
+    padding-bottom: 10px;
+    margin-top: 0;
+    font-size: 1.8em;
+}
+
+.cover-image {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    margin-bottom: 20px;
+    box-shadow: var(--shadow);
+}
+
+.detail-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.detail-item strong {
+    display: block;
+    color: var(--accent-color);
+    font-size: 0.9em;
+    margin-bottom: 3px;
+    text-transform: uppercase;
+}
+
+/* ---------------------------------------------------- */
+/* 6. ANIMASI SINOPSIS */
+/* ---------------------------------------------------- */
+.sinopsis p {
+    overflow: hidden; 
+    white-space: normal; 
+    font-style: italic;
+    border-left: 3px solid var(--accent-color);
+    padding-left: 15px;
+    /* Efek tulisan muncul perlahan */
+    opacity: 0;
+    animation: fadeInText 3s forwards;
+    animation-delay: 1s; 
+}
+
+@keyframes fadeInText {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* ---------------------------------------------------- */
+/* 7. RESPONSIVENESS */
+/* ---------------------------------------------------- */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+    .main-content, .sidebar {
+        min-width: 100%;
+    }
+    h1 {
+        font-size: 3em; 
+    }
+}
