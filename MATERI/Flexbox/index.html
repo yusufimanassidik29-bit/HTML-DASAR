@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css"
+>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- beri spacedi kiri-kanan halaman -->
+    <div class="container">
+        <h1>CSS3: Flexbox</h1>
+        <hr/>
+        <!-- wadah/parent display flex -->
+         <!-- shorcut div[class]*4 -->
+         <div class="flex-area">
+            <!-- apa saja yang ada di dalam flex disebut flex item -->
+            <div class="card">A</div>
+            <div class="card border">B</div>
+            <div class="card">C</div>
+         </div><hr><br>
+         <div class="flex-area alert">
+            <!-- apa saja yang ada di dalam flex disebut flex item -->
+            <p class="tulisan">
+                 <strong>🧾pastikan semua jawaban sudah diisi </strong>❗❗❗ 
+            </p>
+            <button type="button"onclick="this.parentElement.style.display='none'">
+                 ❌
+            </button>
+         </div> 
+    </div>
+</body>
+</html>

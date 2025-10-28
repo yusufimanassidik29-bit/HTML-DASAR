@@ -1,0 +1,40 @@
+header {
+    background: #56aaa3;
+    text-align: center;
+}
+
+nav {
+    background: #aad4db;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav ul {
+    gap: 13px;
+}
+
+nav li a {
+    color: #f0f8ff;
+    background: #7cd4cd;
+}
+
+/* media query = atur css di ukuran layar tertentu */
+/* 1024px => dekstop/laptop ++ */
+
+/* ukuran 1024px => desktop++ */
+@media screen and (min-width: 1024px) {
+  /* masukkan tag / target selector */
+  header{
+    background-color: #56aaa3;
+  }
+}
+
+/* ukuran 768-1023px => tablet */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  /* masukkan tag / target selector */
+  header{
+    background-color:#5681aa;
+  }
+}

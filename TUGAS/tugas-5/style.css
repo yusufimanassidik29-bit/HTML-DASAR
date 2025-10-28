@@ -1,0 +1,202 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f7f6;
+  margin: 0;
+  padding: 20px;
+  height: 100vh;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.area {
+  background: #faf7f7;
+  border: 2px solid #dfdfdf;
+  border-radius: 6px;
+  padding: 10px;
+}
+
+.area h3 {
+  margin: 0 0 10px 0;
+  font-size: 1.1em;
+}
+
+.flex-area {
+  display: flex;
+  gap: 12px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.alert {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgb(197, 192, 192);
+  color: white;
+  border-radius: 8px;
+  height: 35px;
+  padding: 0 10px;
+  margin: 0;        
+  width: 98%;              
+}
+
+.close {
+  background: transparent;
+  border: none;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  margin-left: 10px;         
+  font-size: 14px;
+}
+
+.profile-card {
+  padding: 15px;
+  border-radius: 8px;
+  border: 1px solid #dfdfdf;
+  background-color: #faf7f7;
+}
+
+/* Judul di atas kotak profil */
+.card h3 {
+  margin-top: 0;
+}
+
+/* Kotak profil utama */
+.info {
+  width: 250px;
+  padding: 20px;
+  border-radius: 12px;
+  border: 1px solid #dfdfdf;
+  text-align: center;
+  margin: 20px auto; /* otomatis ke tengah */
+  background-color: #ffffff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+/* Efek hover: naik dan bayangan makin dalam */
+.info:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 25px rgba(132, 132, 207, 0.35);
+  border-color: #8484cf;
+}
+
+/* Area gambar */
+.gambar {
+  position: relative;
+  width: 80px;
+  height: 80px;
+  margin: 0 auto 10px; 
+}
+
+/* Status "Active" di pojok kanan atas */
+.active {
+  position: absolute;
+  top: 0; 
+  right: -10px; 
+  padding: 2px 6px;
+  border-radius: 10px; 
+  font-size: 0.7em;
+  font-weight: bold;
+  color: white;
+  background-color: #4CAF50; 
+  border: 1px solid white;  
+}
+
+/* Gambar profil */
+.gambare {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+  box-shadow: 0 0 8px rgba(132, 132, 207, 0.3);
+  transition: all 0.3s ease;
+}
+
+/* Tambahan efek glowing halus di foto */
+.gambare:hover {
+  box-shadow: 0 0 16px rgba(100, 149, 237, 0.6);
+  transform: scale(1.05);
+}
+
+.card {
+  background: #f9f9f9;
+  text-align: center;
+  place-content: center;
+  place-items: center;
+  height: 200px;
+  width: 200px;
+  border: 2px solid #e6dcdc;
+  border-radius: 6px;
+}
+
+/* --- Pricing Cards --- */
+.pricing {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.pricing-card {
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  width: 200px;
+  text-align: center;
+  border: 1px solid #c7d2fe;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+  transition: 0.3s;
+}
+
+.pricing-card:hover {
+  border-color: #6366f1;
+  transform: translateY(-5px);
+}
+
+.pricing-title {
+  font-weight: 600;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.price {
+  font-size: 20px;
+  color: #4f46e5;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.desc {
+  font-size: 13px;
+  color: #475569;
+  margin-bottom: 15px;
+}
+
+.btn {
+  background-color: #4f46e5;
+  color: white;
+  border: none;
+  padding: 8px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background-color: #3730a3;
+}
+
+.section {
+  margin: 15px 0;
+  padding: 15px;
+  border-radius: 8px;
+  border: 1px solid #dfdfdf;
+  background-color: #faf7f7;
+}
+

@@ -1,0 +1,43 @@
+.card {
+  background: #f9f9f9;
+  text-align: center;
+  place-content: center;
+  place-items: center;
+  height: 200px;
+  width: 200px;
+  border: 2px solid #e6dcdc;
+  border-radius: 6px;
+}
+
+.border {
+    border-color: rgb(33, 64, 165);
+    height: 215px;
+    width: 215px;
+}
+
+.flex-area {
+    display: flex;
+    /* atur posisi item secara horizontal */
+    justify-content: center;
+    /* gap = jarak antar item */
+    gap: 12px;
+    /* atur posisi item secara horizantal (sumbu x) */
+    align-items: center;
+}
+
+.alert {
+    width: 600px;
+    background: #f09e9e;
+    justify-content: space-between;
+}
+
+.tulisan {
+    font-size: small;
+    color: rgb(233, 87, 87);
+}
+
+.alert button {
+    background: #f5f2f2;
+    font-size: x-small;
+    box-shadow: #f09e9e;
+}
